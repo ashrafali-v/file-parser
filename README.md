@@ -23,20 +23,20 @@ data-processing-project/
 
 ### Clone Repository
 ```bash
-git clone <repository-url>
-cd data-processing-project
+git clone https://github.com/ashrafali-v/file-parser.git
+cd file-parser
 ```
 
 ### Build Docker Image
 ```bash
-docker build -t data-processor .
+docker build -t  challenge-b-parser .
 ```
 
 ## Usage
 
 ### Run Container
 ```bash
-docker run data-processor
+docker run -v $(pwd)/output:/app/output challenge-b-parser
 ```
 
 ## Features
