@@ -27,6 +27,16 @@ git clone https://github.com/ashrafali-v/file-parser.git
 cd file-parser
 ```
 
+### run file genarator(Challenge A)
+```bash
+node src/generate/generateData.js
+```
+
+### run file genarator(Challenge A)
+```bash
+node src/parser/fileParser.js
+```
+
 ### Build Docker Image
 ```bash
 docker build -t  challenge-b-parser .
