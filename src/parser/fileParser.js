@@ -42,8 +42,8 @@ class FileParser {
 
         if (obj.trim()) {
           const result = this.identifyObjectType(obj);
-          const output = `Object ${++objectCount}: "${result.value}" | Type: ${result.type}`
-          outputStream.write(output);
+          const output = `${++objectCount}: "${result.value}" | Type: ${result.type}`
+          outputStream.write(output + "\n");
           console.log(output);
         }
       }
