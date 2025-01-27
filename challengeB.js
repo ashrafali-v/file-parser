@@ -68,4 +68,4 @@ class FileParser {
   }
 }
 
-FileParser.parseFile('random_data.txt');
+FileParser.parseFile('random_objects.txt');

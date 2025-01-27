@@ -67,4 +67,4 @@ function generateFile(filename, targetSize) {
   });
 }
 
-generateFile('random_data.txt', 10 * 1024 * 1024);
+generateFile('random_objects.txt', 10 * 1024 * 1024);

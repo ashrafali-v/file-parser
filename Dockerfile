@@ -5,10 +5,10 @@ FROM node:18-slim AS generator
 WORKDIR /app
 
 # Copy generator script into the working directory
-COPY src/generate/generateData.js .
+COPY challengeA.js .
 
 # Run the data generation script during image build
-RUN node generateData.js
+RUN node challengeA.js
 
 # Start second build stage with a fresh Node.js image
 FROM node:18-slim
@@ -17,13 +17,13 @@ FROM node:18-slim
 WORKDIR /app
 
 # Copy generated data file from previous stage
-COPY --from=generator /app/random_data.txt .
+COPY --from=generator /app/random_objects.txt .
 
 # Copy parser script into working directory
-COPY src/parser/fileParser.js .
+COPY challengeB.js .
 
 # Ensure the output directory is writable
 VOLUME /app/output
 
 # Default command to run when container starts
-CMD ["node", "fileParser.js"]
+CMD ["node", "challengeB.js"]

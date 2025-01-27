@@ -6,12 +6,10 @@ A Docker-based application for generating and parsing random data files.
 ## Project Structure
 ```
 data-processing-project/
-├── src/
-│   ├── generate/
-│   │   └── generateData.js
-│   └── parser/
-│       └── fileParser.js
+├── challengeA.js
+│── challengeB.js
 ├── Dockerfile
+├── random_objects.txt
 └── README.md
 ```
 
@@ -29,12 +27,12 @@ cd file-parser
 
 ### run file genarator(Challenge A)
 ```bash
-node src/generate/generateData.js
+node challengeA.js
 ```
 
-### run file genarator(Challenge A)
+### run file genarator(Challenge B)
 ```bash
-node src/parser/fileParser.js
+node challengeB.js
 ```
 
 ### Build Docker Image
